@@ -1,0 +1,26 @@
+
+
+{foreach $content as $key=>$list}
+<li style="width:625px">
+{if $wordnum ne null}
+<a href="{baseurl}/lists?cateid={$list.cateid}">[{field model='article_category' id=$list.cateid name='catename'}]&nbsp;</a>
+	<a href="{$list.link}">
+			 {$list.title|truncate:$wordnum:".."} 
+			
+	</a>
+ <span>{$list.addtime|date_format:"%Y-%m-%d"}</span>
+	
+    {else}
+    <a href="{baseurl}/lists?cateid={$list.cateid}">[{field model='article_category' id=$list.cateid name='catename'}]&nbsp;</a>
+	<a href="{$list.link}">
+			 {$list.title|truncate:18:".."}
+			 
+			</a>
+	
+	<span>{$list.addtime|date_format:"%Y-%m-%d"}</span>
+
+{/if}
+
+
+</li>
+{/foreach}

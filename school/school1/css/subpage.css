@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+.clearfix:after {
+    content:"";
+    display: block;
+    clear:both;
+}
+.first{
+    height: 28px;
+    background: #E4E4E4;
+    border-bottom: 1px solid silver;
+}
+.fi{
+    width: 960px;
+    line-height: 29px;
+    font-size: 12px;
+    text-align: right;
+    margin: 0 auto;
+}
+a{
+    color: black;
+    margin: 0 10px;
+}
+.school{
+    margin-top: 0;
+    height: 209px;
+    text-align: center;
+}
+.title{
+    height: 43px;
+    background: url("../img/background.png" ) repeat;
+    border-bottom:  2px solid #447215;
+    text-align: center;
+}
+ul li{
+    float: left;
+    list-style: none;
+    border-left: 2px solid #8CD71E;
+}
+.nav{
+    width: 958px;
+    height: 43px;
+    margin: 0 auto;
+}
+.navi{
+    height: 43px;
+    width: 103px;
+    text-align: center;
+    line-height: 45px;
+}
+.cap{
+    width: 958px;
+    height: 40px;
+    background: url("../img/bgroung.png") repeat;
+    border: 1px solid #BEBEBE;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+.texts{
+    font-size: 13px;
+    width: 50%;
+    color: #B13C02;
+    text-overflow: ellipsis;
+    padding-top: 0px;
+    display:block;
+    overflow:hidden;
+    word-break:keep-all;
+    white-space:nowrap;
+    line-height: 40px;
+    margin-left: 20px;
+    float: left;
+}
+.text{
+    float: right;
+    width: 45%;
+    line-height: 40px;
+    color: #B13C02;
+    font-size: 13px;
+}
+.admin{
+    margin-left: 5px;
+    height: 22px;
+    width: 90px;
+    border: 1px solid #BEBEBE;
+}
+.ok{
+    width: 45px;
+    height: 20px;
+    background: #87CB52;
+    border-radius: 5px;
+}
+.yes{
+    width: 45px;
+    height: 20px;
+    background: #1988B6;
+    border-radius: 5px;
+}
+.main{
+    width: 970px;
+    height: 620px;
+    margin: 0 auto;
+}
+.set_left{
+    width: 235px;
+    height: 620px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.setting{
+    width: 235px;
+    height: 250px;
+    border: 1px solid #ABABAB;
+    border-radius: 5px;
+}
+.set_right{
+    width: 715px;
+    height: 620px;
+    border: 1px solid #ABABAB;
+    float: right;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.header{
+    width: 210px;
+    height: 35px;
+    border-bottom: 2px solid #D5E1C6;
+    margin-left: 15px;
+}
+.head_web{
+    width: 90px;
+    height: 35px;
+    border-bottom: 2px solid #87AA5E;
+    float: left;
+}
+.web{
+    line-height: 40px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+.art{
+    width: 225px;
+    height: 190px;
+    margin: auto;
+}
+.arts{
+    height: 16%;
+    width: 95%;
+    border: none;
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.labimg{
+    margin-top: 5px;
+}
+.header2{
+    width: 660px;
+    height: 35px;
+    border-bottom: 2px solid #D5E1C6;
+    margin-left: 15px;
+}
+.stage{
+    font-size: 12px;
+    text-indent: 2em;
+    color: #152206;
+    line-height: 25px;
+    margin: auto 20px;
+    margin-top: 15px;
+}
+.stages{
+    font-size: 12px;
+    text-indent: 2em;
+    color: #152206;
+    line-height: 25px;
+    margin: auto 20px;
+}
+.good{
+    width: 958px;
+    height: 140px;
+    border: 1px solid #BEBEBE;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 18px;
+}
+.goods{
+    width: 8%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    border-left: none;
+}
+.familyedu{
+    width: 15%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    border-left: none;
+}
+.img1{
+    border: 2px solid #B7C9D7;
+}
+.footer{
+    height: 45px;
+    background: #686868;
+    margin-top: 5px;
+}
+.foot{
+    margin-top: 1px;
+    height: 90px;
+    background: #A0A0A0;
+}
+.footer_a{
+    width: 960px;
+    height: 45px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 45px;
+    margin: 0 auto;
+}
+.footers_a{
+    color: #EEEEEE;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.foot{
+    text-align: center;
+    line-height: 30px;
+}
+h6{
+    font-weight: 300;
+    color: #000000;
+}

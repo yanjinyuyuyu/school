@@ -1,0 +1,87 @@
+{if isset($smarty.get.cateid)}
+
+<!--列表页-->
+    <!--   一级栏目 子栏目    -->
+    {if {field model='article_category' id=$smarty.get.cateid name='parent_id'}=='0'}
+    {categorylist parentid=$smarty.get.cateid}{/categorylist}
+    <!--   二级栏目 同级栏目   -->
+    {elseif {field model='article_category' id=$smarty.get.cateid name='parent_id'}!='0'}
+    {categorylist parentid={field model='article_category' id=$smarty.get.cateid name='topparentid'}}{/categorylist}
+    {/if}
+
+{if $content ne null}
+<div class="col floatLeft list-menu" style="width: 27%;">
+
+<!-- 
+<div class="tit">{field model='article_category' id=$smarty.get.cateid name='catename'}</div> -->
+
+
+
+
+
+
+
+
+
+<ul style="padding-left:10px;">
+                     
+    {foreach $content as $key=>$list}
+    {if $list._id == $smarty.get.cateid}
+    <li class="act"><a href="{$list.link}"><i class="fa fa-angle-double-right"></i> {$list.catename}</a></li>
+    {elseif $list._id != $smarty.get.cateid}
+    <li><a href="{$list.link}"><i class="fa fa-angle-double-right"></i> {$list.catename}</a></li>
+    {/if}
+
+
+    {if $list.child ne null}
+        <!--二级菜单-->
+    {foreach $list.child as $key=>$list}
+        {if $list._id == $smarty.get.cateid}
+    <li class="act"> <a href="{$list.link}"><i class="fa fa-angle-double-right"></i> {$list.catename}</a></li>
+        {elseif $list._id != $smarty.get.cateid}
+    <li> <a href="{$list.link}"><i class="fa fa-angle-double-right"></i> {$list.catename}</a></li>
+        {/if}
+    {/foreach}
+
+    {/if}
+
+    {/foreach}
+</ul>
+  <div class="clear"></div>
+</div>
+{/if}
+
+<!--详细页面-->
+{else}
+{categorylist parentid={$arttoppid}}{/categorylist}
+
+{if $content ne null}
+
+<div class="col floatLeft list-menu" style="width: 27%;">
+    <ul style="padding-left:10px;">
+              
+
+        {foreach $content as $key=>$list}
+        {if $list._id == {$arttpid}}
+        <li class="act"><a href="{$list.link}"><i class="fa fa-angle-double-right"></i> {$list.catename}</a></li>
+        {elseif $list._id != {$arttoppid}}
+        <li><a href="{$list.link}"><i class="fa fa-angle-double-right"></i> {$list.catename}</a></li>
+        {/if}
+
+        <!--二级菜单-->
+        {if $list.child ne null}
+            {foreach $list.child as $key=>$list}
+            {if $list._id == {$arttpid}}
+            <li class="act"><a href="{$list.link}">--<i class="fa fa-angle-double-right"></i> {$list.catename}</a></li>
+            {elseif $list._id != {$arttoppid}}
+            <li><a href="{$list.link}">--<i class="fa fa-angle-double-right"></i> {$list.catename}</a></li>
+            {/if}
+            {/foreach}
+        {/if}
+        <!--二级菜单end-->
+        {/foreach}
+</ul>
+<div class="clear"></div>
+</div>
+{/if}
+{/if}

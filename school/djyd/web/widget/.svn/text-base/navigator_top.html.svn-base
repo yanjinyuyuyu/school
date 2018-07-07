@@ -1,0 +1,18 @@
+{if isset($smarty.get.cateid)}
+{$cateid = $smarty.get.cateid}
+{else}
+{$cateid = '5930dd2760004ee80b000040'}
+{/if}
+        {foreach $content as $key=>$list}
+            <li class="{if $list.id eq $cateid}active{/if}{if $list.child ne null} parent{/if}"><a href="{$list.link}" >{$list.catename}</a>
+				<!--二级菜单-->
+
+	        {if $list.child ne null}
+	            <ul>
+				    {foreach $list.child as $key=>$list}
+				        <li><a href="{$list.link}">{$list.catename}</a></li>
+				        {/foreach}
+				</ul>
+			{/if}
+	            <!--二级菜单end--></li>
+        {/foreach}
