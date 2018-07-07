@@ -1,0 +1,238 @@
+*{
+    text-decoration: none;
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.titles{
+    background: url("../img/title.gif");
+    background-size: 100% 100%;
+    height: 200px;
+}
+.navbar-toggle {
+   margin-right: 50%;
+}
+/*.navbar-collapse ul{
+    height: 50px;
+}*/
+.navbar .nav li:hover > a {
+    color: #e67e22;
+    text-decoration: none;
+}
+.navbar{
+    border-bottom: 2px solid #e1e1e1;
+}
+.nav .now{
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: -2px;
+}
+.navbar{
+    margin-bottom: 0;
+}
+
+/*home区域*/
+.home{
+    width: 100%;
+    height: 35%;
+    background: white;
+    color: #0f0f0f;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+.home h1{
+    font-weight: bold;
+    margin-top:0 ;
+    margin-bottom: 25px;
+}
+.home span{
+    font-size:12px ;
+}
+.home  span a{
+    color:#e38023 ;
+}
+.home p{
+    font-size:18px ;
+    padding-top: 20px;
+    text-align: left;
+}
+.home img{
+    margin-top: 10px;
+}
+.home input{
+    width: 80px;
+    height: 30px;
+    background: #e38023;
+    color: white;
+    border: none;
+}
+.home_input{
+    height: 80px;
+    text-align: left;
+    padding-top: 20px;
+}
+.home_down{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #A7A8A9;
+    background: url("../img/flies.png") 20px 20px no-repeat;
+}
+/*社区*/
+.community{
+    background: white;
+    color: #0f0f0f;
+    text-align: left;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.community p{
+    padding-top: 5px;
+}
+.community h4{
+    border-bottom: 1px solid #A7A8A9;
+}
+.community_h4{
+    width: 40%;
+    border-bottom: 1px solid #e38023;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#label1{
+    color: #e38023;
+    background:url("../img/chat.png") 0 3px no-repeat;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#label2{
+    color: #e38023;
+    background:url("../img/weibo.png") 0 3px  no-repeat;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.community input{
+    width: 95%;
+    height: 30px;
+    margin: 15% auto;
+    background: #e38023;
+    color: white;
+    border: none;
+}
+.community ul{
+   padding: 0;
+}
+.community a{
+    text-decoration: none;
+    color: #78797a;
+}
+.community li{
+    white-space: nowrap;
+    border: 1px solid #c4c5c6;
+    padding: 3px;
+    color: #78797a;
+    list-style: none;
+    float: left;
+   margin: 5px;
+}
+/*分页*/
+
+.pagination a{
+    margin-right: 20px;
+    background: #e38023;
+    text-decoration: none;
+    color: white;
+}
+.pagination span{
+    background: #e67e22;
+    color: #ffffff;
+    margin: 0 3px;
+    display: inline-block;
+    line-height: 36px;
+    padding: 0 14px;
+    border-radius: 2px;
+}
+.foot{
+    background: #272727;
+    padding: 35px 0 15px;
+    color: #959595;
+    border-bottom: 1px solid #585858;
+}
+.content{
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.text .title{
+    margin-bottom: 20px;
+}
+.foot h4{
+    color: #ffffff;
+    border-bottom: 1px solid #434343
+}
+.content a{
+    padding: 3px;
+   margin: 0 8px;
+    color:  #959595;
+}
+.content a:hover{
+    background:#e67e22;
+    text-decoration: none;
+}
+.foot li:hover{
+    background: #e67e22;
+}
+.foot .community_h4{
+    padding-bottom: 15px;
+}
+.foot li{
+    white-space: nowrap;
+    border: 1px solid #c4c5c6;
+    padding: 3px;
+    color: #78797a;
+    list-style: none;
+    float: left;
+    margin: 5px;
+}
+.down{
+    height: 100px;
+    background: black;
+    text-align: center;
+    line-height: 100px;
+}
+.down span{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.down a{
+    color: #4e4f50;
+    text-decoration:none ;
+}
+#go_up{
+    background: #f7a363;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    position: fixed;
+    border-radius: 5px;
+    right: 10px;
+    cursor: pointer;
+    top: 830px;
+
+}
+#go_up2{
+    background: #f7a363;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    position: fixed;
+    border-radius: 5px;
+    right: 10px;
+    cursor: pointer;
+    top: 450px;
+
+}
