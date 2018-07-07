@@ -1,0 +1,7 @@
+{foreach $content1 as $key=>$list}
+{if $key == count($content1)-1}
+<a href="{$list.link}">{$list.catename}</a>
+{else}
+<a href="{$list.link}">{$list.catename}</a>   >
+{/if}
+{/foreach}

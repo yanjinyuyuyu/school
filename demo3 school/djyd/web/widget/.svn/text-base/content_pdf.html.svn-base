@@ -1,0 +1,12 @@
+{if $content.newname eq null}
+    {if $content.content eq null}
+    {else}
+    {$content.content}
+    {/if}
+{else}
+    {include file='library/content_pdf.html'}
+    {if $content.content eq null}
+    {else}
+    {$content.content}
+    {/if}
+{/if}
